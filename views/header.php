@@ -11,8 +11,12 @@
         <div class="header-content">
             <h1>Dynamic Class Management</h1>
             <nav>
-                <!-- TODO: Display logged in user's name and role -->
-                <!-- TODO: Add logout button -->
+                <?php if (isset($_SESSION['username'])): ?>
+                    <span class="user-info">
+                        Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?> (<?php echo htmlspecialchars(ucfirst($_SESSION['role'])); ?>)
+                    </span>
+                    <a href="../logout.php" class="btn btn-logout">Logout</a>
+                <?php endif; ?>
             </nav>
         </div>
     </header>

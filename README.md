@@ -23,35 +23,35 @@ Complete this starter template by implementing the required features outlined be
 ## What You Need to Build
 
 ### Phase 1: Authentication System
-- [ ] Implement user login with username/password
-- [ ] Create session management
-- [ ] Add role-based access control (lecturer vs student)
-- [ ] Implement logout functionality
-- [ ] Add password hashing for security
+- [x] Implement user login with username/password
+- [x] Create session management
+- [x] Add role-based access control (lecturer vs student)
+- [x] Implement logout functionality
+- [x] Add password hashing for security
 
 ### Phase 2: Lecturer Features
-- [ ] Create class creation form
-- [ ] Display lecturer's classes
-- [ ] Show enrolled students per class
-- [ ] Implement grade assignment system
-- [ ] Build attendance tracking feature
-- [ ] Add class deletion capability
+- [x] Create class creation form
+- [x] Display lecturer's classes
+- [x] Show enrolled students per class
+- [x] Implement grade assignment system
+- [x] Build attendance tracking feature
+- [x] Add class deletion capability
 
 ### Phase 3: Student Features
-- [ ] Display available classes
-- [ ] Implement class enrollment
-- [ ] Show enrolled classes
-- [ ] Display class schedules
-- [ ] Show attendance records
-- [ ] Display grades
+- [x] Display available classes
+- [x] Implement class enrollment
+- [x] Show enrolled classes
+- [x] Display class schedules
+- [x] Show attendance records
+- [x] Display grades
 
 ### Phase 4: UI/UX Enhancement
-- [ ] Style the login page
-- [ ] Create responsive dashboards
-- [ ] Design class cards
-- [ ] Add form validation
-- [ ] Implement error/success messages
-- [ ] Make it mobile-friendly
+- [x] Style the login page
+- [x] Create responsive dashboards
+- [x] Design class cards
+- [x] Add form validation
+- [x] Implement error/success messages
+- [x] Make it mobile-friendly
 
 ## Database Requirements
 

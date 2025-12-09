@@ -52,36 +52,36 @@ By completing this project, students will demonstrate:
 ## Grading Rubric (Suggested)
 
 ### Functionality (40 points)
-- [ ] Authentication works correctly (8 pts)
-- [ ] Lecturer can create/manage classes (8 pts)
-- [ ] Lecturer can manage grades and attendance (8 pts)
-- [ ] Students can enroll/drop classes (8 pts)
-- [ ] Students can view their information (8 pts)
+- [x] Authentication works correctly (8 pts)
+- [x] Lecturer can create/manage classes (8 pts)
+- [x] Lecturer can manage grades and attendance (8 pts)
+- [x] Students can enroll/drop classes (8 pts)
+- [x] Students can view their information (8 pts)
 
 ### Code Quality (20 points)
-- [ ] Clean, organized code structure (5 pts)
-- [ ] Proper commenting and documentation (5 pts)
-- [ ] Follows PHP best practices (5 pts)
-- [ ] DRY principle applied (5 pts)
+- [x] Clean, organized code structure (5 pts)
+- [x] Proper commenting and documentation (5 pts)
+- [x] Follows PHP best practices (5 pts)
+- [x] DRY principle applied (5 pts)
 
 ### Security (15 points)
-- [ ] SQL injection prevention (5 pts)
-- [ ] XSS protection (5 pts)
-- [ ] Password hashing implemented (5 pts)
+- [x] SQL injection prevention (5 pts)
+- [x] XSS protection (5 pts)
+- [x] Password hashing implemented (5 pts)
 
 ### Database Design (10 points)
-- [ ] Proper normalization (3 pts)
-- [ ] Appropriate data types (3 pts)
-- [ ] Foreign keys and constraints (4 pts)
+- [x] Proper normalization (3 pts)
+- [x] Appropriate data types (3 pts)
+- [x] Foreign keys and constraints (4 pts)
 
 ### UI/UX (10 points)
-- [ ] Professional appearance (3 pts)
-- [ ] User-friendly interface (3 pts)
-- [ ] Responsive design (4 pts)
+- [x] Professional appearance (3 pts)
+- [x] User-friendly interface (3 pts)
+- [x] Responsive design (4 pts)
 
 ### Documentation (5 points)
-- [ ] Clear README with setup instructions (3 pts)
-- [ ] Code comments where needed (2 pts)
+- [x] Clear README with setup instructions (3 pts)
+- [x] Code comments where needed (2 pts)
 
 **Total: 100 points**
 
@@ -156,33 +156,33 @@ GROUP BY c.id
 ## Testing Checklist for Students
 
 ### Authentication
-- [ ] Can login with valid credentials
-- [ ] Cannot login with invalid credentials
-- [ ] Redirects to correct dashboard based on role
-- [ ] Logout works properly
-- [ ] Cannot access pages without login
+- [x] Can login with valid credentials
+- [x] Cannot login with invalid credentials
+- [x] Redirects to correct dashboard based on role
+- [x] Logout works properly
+- [x] Cannot access pages without login
 
 ### Lecturer Features
-- [ ] Can create new class
-- [ ] Can view all their classes
-- [ ] Can see enrolled students
-- [ ] Can update grades
-- [ ] Can mark attendance
-- [ ] Can delete classes
+- [x] Can create new class
+- [x] Can view all their classes
+- [x] Can see enrolled students
+- [x] Can update grades
+- [x] Can mark attendance
+- [x] Can delete classes
 
 ### Student Features
-- [ ] Can view available classes
-- [ ] Can enroll in classes
-- [ ] Cannot enroll in full classes
-- [ ] Can view enrolled classes
-- [ ] Can see grades and attendance
-- [ ] Can drop classes
+- [x] Can view available classes
+- [x] Can enroll in classes
+- [x] Cannot enroll in full classes
+- [x] Can view enrolled classes
+- [x] Can see grades and attendance
+- [x] Can drop classes
 
 ### Security
-- [ ] Passwords are hashed in database
-- [ ] SQL injection attempts fail
-- [ ] XSS attempts are escaped
-- [ ] Users cannot access other roles' pages
+- [x] Passwords are hashed in database
+- [x] SQL injection attempts fail
+- [x] XSS attempts are escaped
+- [x] Users cannot access other roles' pages
 
 ## Extension Ideas (Bonus Points)
 

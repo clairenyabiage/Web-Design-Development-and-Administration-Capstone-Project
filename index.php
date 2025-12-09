@@ -1,9 +1,16 @@
 <?php
-// TODO: Include config file
+require_once 'config/config.php';
 
-
-// TODO: Check if user is logged in
-// If logged in, redirect to appropriate dashboard based on role
-// If not logged in, redirect to login page
-
+// Check if user is logged in
+if (isLoggedIn()) {
+    if (hasRole('lecturer')) {
+        header("Location: views/dashboard_lecturer.php");
+    } else {
+        header("Location: views/dashboard_student.php");
+    }
+    exit();
+} else {
+    header("Location: login.php");
+    exit();
+}
 ?>

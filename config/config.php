@@ -1,27 +1,51 @@
 <?php
-// TODO: Start session
-
+session_start();
 
 // Database configuration
 $host = 'localhost';
 $user = 'root';
-$pass = '';
+$pass = 'Bang1ad3sh';
 $db = 'dcma';
 
-// TODO: Create database connection
+// Create database connection
+$conn = new mysqli($host, $user, $pass, $db);
 
+// Check connection and handle errors
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-// TODO: Check connection and handle errors
+// Set charset to utf8
+$conn->set_charset("utf8");
 
+// Helper functions
+function isLoggedIn() {
+    return isset($_SESSION['user_id']);
+}
 
-// TODO: Set charset to utf8
+function hasRole($role) {
+    return isset($_SESSION['role']) && $_SESSION['role'] === $role;
+}
 
+function requireLogin() {
+    if (!isLoggedIn()) {
+        header("Location: login.php");
+        exit();
+    }
+}
 
-// TODO: Create helper functions
-// - isLoggedIn(): Check if user is logged in
-// - hasRole($role): Check if user has specific role
-// - requireLogin(): Redirect if not logged in
-// - requireRole($role): Redirect if user doesn't have required role
-// - sanitize($data): Sanitize user input to prevent SQL injection
+function requireRole($role) {
+    requireLogin();
+    if (!hasRole($role)) {
+        $_SESSION['error_message'] = "You do not have permission to access that page.";
+        header("Location: /login.php"); 
+        exit();
+    }
+}
+
+function sanitize($data) {
+    global $conn;
+    return mysqli_real_escape_string($conn, trim($data));
+}
 
 ?>

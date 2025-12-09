@@ -1,7 +1,5 @@
 /* Dynamic Class Management Application - Starter Styles */
 
-/* TODO: Add your custom styles here */
-
 /* Basic Reset */
 * {
     margin: 0;
@@ -15,85 +13,483 @@ body {
     color: #333;
 }
 
-/* TODO: Style the login page */
 .login-container {
-    /* Add styles for centering login box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Modern gradient background */
 }
 
 .login-box {
-    /* Add styles for login form container */
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
-/* TODO: Style the header */
+.login-box h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.login-box h2 {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.login-box button[type="submit"] {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-box button[type="submit"]:hover {
+    background-color: #6a11cb;
+}
+
+.login-box .error {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.demo-credentials {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.demo-credentials p {
+    margin-bottom: 5px;
+}
+
 .main-header {
-    /* Add styles for main header */
+    background-color: #34495e; /* Dark blue-gray */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
-    /* Add styles for header content layout */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-/* TODO: Style the dashboard */
+.header-content h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.header-content nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-content nav ul li {
+    margin-left: 25px;
+}
+
+.header-content nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-content nav ul li a:hover {
+    color: #a2d9ff; /* Lighter blue on hover */
+}
+
 .dashboard {
-    /* Add styles for dashboard container */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* TODO: Style forms */
-.form-group {
-    /* Add styles for form groups */
+.dashboard h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
 
-.form-group label {
-    /* Add styles for labels */
+.dashboard h3 {
+    color: #4a6572;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    /* Add styles for form inputs */
+.form-container {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
-/* TODO: Style buttons */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group input[type="email"],
+.input-group input[type="date"],
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
 .btn {
-    /* Add base button styles */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    font-size: 0.95em;
 }
 
 .btn-primary {
-    /* Add primary button styles */
+    background-color: #2575fc;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #6a11cb;
 }
 
 .btn-secondary {
-    /* Add secondary button styles */
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
 }
 
 .btn-danger {
-    /* Add danger button styles */
+    background-color: #dc3545;
+    color: white;
 }
 
-/* TODO: Style class cards */
-.classes-grid {
-    /* Add grid layout for classes */
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
 }
 
 .class-card {
-    /* Add styles for individual class cards */
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
 }
 
-/* TODO: Style tables */
-.data-table {
-    /* Add styles for data tables */
+.class-card:hover {
+    transform: translateY(-5px);
 }
 
-/* TODO: Style messages */
-.error-message {
-    /* Add styles for error messages */
+.class-card h3 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
 }
 
-.success-message {
-    /* Add styles for success messages */
+.class-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 8px;
 }
 
-/* TODO: Add responsive design for mobile devices */
+.class-card strong {
+    color: #555;
+}
+
+.class-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #e9ecef;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #34495e;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.message-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.message-container .success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-container .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #343a40;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.modal-content h4 {
+    margin-top: 0;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
-    /* Add mobile-friendly styles */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-content nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .header-content nav ul li {
+        margin: 5px 0;
+    }
+
+    .dashboard {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .class-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    table, .table-responsive {
+        display: block;
+        width: 100%;
+    }
+
+    table thead, table tbody, table th, table td, table tr {
+        display: block;
+    }
+
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table tr {
+        border: 1px solid #e9ecef;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    table td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left;
+        color: #34495e;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
 }
